@@ -39,16 +39,6 @@ jobs:
         github_token: ${{ secrets.SYNC }}
         branch: master
 
-    #- name: Clone main
-    #  run: |
-        git clone -b main git@gitee.com:dockere/jd_tools.git main
-    #- name: Push main
-      uses: ad-m/github-push-action@master
-      with:
-        directory: main
-        github_token: ${{ secrets.SYNC }}
-        branch: main
-
     - name: Delete Workflow Runs
       uses: Mattraks/delete-workflow-runs@main
       with:
